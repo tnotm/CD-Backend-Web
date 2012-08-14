@@ -57,14 +57,23 @@ CREATE TABLE user_table001 (
     UNIQUE (user_email)
 )  ENGINE=Innodb DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 
-CREATE TABLE 'review_table001' (
-	'review_id' int(11) NOT NULL auto_increment,
-	'user_id_num' int(11) NOT NULL default ' ',
-	'review_date' datetime NOT NULL default '0000-00-00 00:00:00',
-	'user_firstname' varchar(65) NOT NULL default ' ',
-	'user_lastname' varchar(65) NOT NULL default ' ',
-	'review_body' longtext NOT NULL default ' ',
-	PRIMARY KEY ('review_id')
+
+CREATE TABLE review_table001 (
+	review_id int(11) NOT NULL auto_increment,
+	user_id_num int(11) NOT NULL default ' ',
+	review_date datetime NOT NULL default '0000-00-00 00:00:00',
+	user_firstname varchar(65) NOT NULL default ' ',
+	user_lastname varchar(65) NOT NULL default ' ',
+	review_body longtext NOT NULL default ' ',
+	review_hash_01 varchar(32) NOT NULL ' ',
+	review_hash_02 varchar(32) NOT NULL ' ',
+	review_hash_03 varchar(32) NOT NULL ' ',
+	review_hash_04 varchar(32) NOT NULL ' ',
+	review_hash_05 varchar(32) NOT NULL ' ',
+	review_hash_06 varchar(32) NOT NULL ' ',
+	review_hash_07 varchar(32) NOT NULL ' ',
+	review_hash_08 varchar(32) NOT NULL ' ',
+	PRIMARY KEY (review_id)
 ) ENGINE=Innodb DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 
 
